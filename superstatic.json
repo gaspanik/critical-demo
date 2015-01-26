@@ -4,9 +4,11 @@
   "routes": {
     "/": "index.html"
   },
-  "clean_urls": true,
+  "clean_urls": false,
   "error_page": "error.html",
-  "cache_control": {},
+  "cache_control": {
+    "*.html": 600
+  },
   "headers": {
     "./": {
       "Access-Control-Allow-Origin": "*"

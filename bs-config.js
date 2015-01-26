@@ -12,7 +12,7 @@
  |
  */
 module.exports = {
-  "files": "*.html, *.css",
+  "files": ["*.html", "css/*.css"],
   "server": {
     "baseDir": "."
   },

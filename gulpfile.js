@@ -1,5 +1,12 @@
 var gulp = require('gulp');
+var less = require('gulp-less');
 var critical = require('critical');
+
+gulp.task('less', function() {
+  gulp.src('_bower/bootstrap/less/bootstrap.less')
+    .pipe(less())
+    .pipe(gulp.dest('css'));
+});
 
 gulp.task('critical', function(cb) {
   critical.generate({
@@ -19,4 +26,4 @@ gulp.task('critical', function(cb) {
   });
 });
 
-gulp.task('default',['critical']);
+gulp.task('default', ['critical']);
