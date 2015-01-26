@@ -1,0 +1,15 @@
+{
+  "name": "critical-demo",
+  "root": "./",
+  "routes": {
+    "/": "index.html"
+  },
+  "clean_urls": true,
+  "error_page": "error.html",
+  "cache_control": {},
+  "headers": {
+    "./": {
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}
